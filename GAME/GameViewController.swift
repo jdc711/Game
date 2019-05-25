@@ -102,6 +102,7 @@ class GameViewController: UIViewController {
         Goal.isHidden = true
         Ball.isHidden = true
         
+        
     }
    
 
@@ -144,5 +145,6 @@ class GameViewController: UIViewController {
     }
     
 
-    
+
+
 }
