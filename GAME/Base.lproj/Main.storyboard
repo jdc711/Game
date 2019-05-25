@@ -111,6 +111,9 @@
                                 <rect key="frame" x="328" y="44" width="39" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Pause"/>
+                                <connections>
+                                    <action selector="pausePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="EKN-aP-hBa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -129,6 +132,7 @@
                         <outlet property="Z" destination="0fH-rm-c8n" id="z28-fb-OyV"/>
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
                         <outlet property="highScores" destination="dgJ-cl-oXc" id="AJT-ZR-L7I"/>
+                        <outlet property="pause" destination="TJC-lG-LoI" id="f6o-am-G4t"/>
                         <outlet property="playButton" destination="2Kr-9P-aMf" id="tM4-If-CET"/>
                     </connections>
                 </viewController>
