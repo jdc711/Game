@@ -44,6 +44,9 @@
                                 <state key="normal" title="\" image="icons8-audio-100">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="soundPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zQz-3R-YIe"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="G" translatesAutoresizingMaskIntoConstraints="NO" id="oFh-f1-Lxv">
                                 <rect key="frame" x="15" y="110" width="83" height="75"/>
