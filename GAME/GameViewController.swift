@@ -25,7 +25,7 @@ class GameViewController: UIViewController {
     
     
     var player: AVAudioPlayer!
-player.numberOfLoops = -1
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +34,7 @@ player.numberOfLoops = -1
         let url = URL(fileURLWithPath: path)
         do{
             player = try AVAudioPlayer(contentsOf: url)
+           player.numberOfLoops = -1
             player.prepareToPlay()
         }catch let error as NSError {
             print(error.description)
@@ -92,7 +93,7 @@ player.numberOfLoops = -1
     }
     
     @IBAction func soundPressed(_ sender: Any) {
-        if (player.isPlaying()){
+        if (player.isPlaying){
              player.stop()
         }
         else{
