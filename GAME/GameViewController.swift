@@ -25,7 +25,7 @@ class GameViewController: UIViewController {
     
     
     var player: AVAudioPlayer!
-
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,16 +34,15 @@ class GameViewController: UIViewController {
         let url = URL(fileURLWithPath: path)
         do{
             player = try AVAudioPlayer(contentsOf: url)
+           player.numberOfLoops = -1
             player.prepareToPlay()
         }catch let error as NSError {
             print(error.description)
         }
     
         
-        player.play();
-        
-        
-        
+        player.play()
+    }
         /*// Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "GameScene") {
@@ -70,10 +69,8 @@ class GameViewController: UIViewController {
             }
         }
     }
+    */
     
-         */
-        
-    }
     @IBAction func playPressed(_ sender: Any) {
         background.isHidden = true
          playButton.isHidden = true
@@ -92,7 +89,17 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func soundPressed(_ sender: Any) {
-        player.stop()
+        
+             player.stop()
+            MUTED.isHidden = false
+            mute.isHidden = true
+        }
+    
+    
+            player.play()
+            MUTED.isHidden = true
+            mute.isHidden = false
+    
     }
     
     override var shouldAutorotate: Bool {
