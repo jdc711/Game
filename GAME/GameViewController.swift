@@ -25,7 +25,7 @@ class GameViewController: UIViewController {
     
     
     var player: AVAudioPlayer!
-
+player.numberOfLoops = -1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -92,7 +92,12 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func soundPressed(_ sender: Any) {
-        player.stop()
+        if (player.isPlaying()){
+             player.stop()
+        }
+        else{
+            player.play()
+        }
     }
     
     override var shouldAutorotate: Bool {
