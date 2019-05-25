@@ -17,6 +17,7 @@
 		B897301022995F0F00CE6BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B897300E22995F0F00CE6BCA /* LaunchScreen.storyboard */; };
 		B897301B22995F0F00CE6BCA /* GAMETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897301A22995F0F00CE6BCA /* GAMETests.swift */; };
 		B897302622995F0F00CE6BCA /* GAMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897302522995F0F00CE6BCA /* GAMEUITests.swift */; };
+		B8ADDF0C229981A000C64EC9 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8ADDF0B2299819F00C64EC9 /* hustle-on.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B897302122995F0F00CE6BCA /* GAMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B897302522995F0F00CE6BCA /* GAMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAMEUITests.swift; sourceTree = "<group>"; };
 		B897302722995F0F00CE6BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8ADDF0B2299819F00C64EC9 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hustle-on.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		B8972FFE22995F0E00CE6BCA /* GAME */ = {
 			isa = PBXGroup;
 			children = (
+				B8ADDF0B2299819F00C64EC9 /* hustle-on.wav */,
 				B8972FFF22995F0E00CE6BCA /* AppDelegate.swift */,
 				B897300122995F0E00CE6BCA /* GameScene.sks */,
 				B897300322995F0E00CE6BCA /* Actions.sks */,
@@ -240,6 +243,7 @@
 			files = (
 				B897300B22995F0E00CE6BCA /* Main.storyboard in Resources */,
 				B897300222995F0E00CE6BCA /* GameScene.sks in Resources */,
+				B8ADDF0C229981A000C64EC9 /* hustle-on.wav in Resources */,
 				B897300D22995F0F00CE6BCA /* Assets.xcassets in Resources */,
 				B897301022995F0F00CE6BCA /* LaunchScreen.storyboard in Resources */,
 				B897300422995F0E00CE6BCA /* Actions.sks in Resources */,
