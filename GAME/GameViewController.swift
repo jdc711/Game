@@ -53,8 +53,9 @@ class GameViewController: UIViewController {
             print(error.description)
         }
         
-        UIView.animate(withDuration: 2.9, animations: { self.Ball.frame = CGRect(x:0,y:0,width: 126, height: 44)}) {(finished)in
+        UIView.animate(withDuration: 1.7, animations: { self.Ball.frame = CGRect(x:133,y:275,width: 126, height: 44)}) {(finished)in
             self.Ball.isHidden = true
+            //self.Goal.isHidden = true
         }
     
         
