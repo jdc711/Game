@@ -32,11 +32,10 @@ class GameViewController: UIViewController {
     @IBOutlet weak var Goal: UIImageView!
     
     @IBOutlet weak var Ball: UIImageView!
-
-    @IBOutlet weak var mute: UIButton!
     
+    @IBOutlet weak var Sound: UIButton!
     
-    @IBOutlet weak var muteOFF: UIButton!
+    @IBOutlet weak var Mute: UIButton!
     
     var player: AVAudioPlayer!
    
@@ -93,7 +92,7 @@ class GameViewController: UIViewController {
         background.isHidden = true
         playButton.isHidden = true
         highScores.isHidden = true
-        mute.isHidden = true
+        Mute.isHidden = true
         G.isHidden = true
         O.isHidden = true
         A.isHidden = true
@@ -106,26 +105,24 @@ class GameViewController: UIViewController {
    
 
     @IBAction func highScoresPressed(_ sender: Any) {
-        
         playButton.isHidden = true
         highScores.isHidden = true
-        mute.isHidden = true
-        
+        Sound.isHidden = true
     }
     
-    @IBAction func soundPressed(_ sender: Any) {
-        
-             player.stop()
-            muteOFF.isHidden = false
-            mute.isHidden = true
-        }
+
+    @IBAction func Mute(_ sender: Any) {
     
-    @IBAction func muteOFFPressed(_ sender: Any) {
+    player.play()
+            Mute.isHidden = true
+            Sound.isHidden = false
+    }
     
+    @IBAction func Sound(_ sender: Any) {
     
-            player.play()
-            muteOFF.isHidden = true
-            mute.isHidden = false
+            player.stop()
+            Mute.isHidden = false
+            Sound.isHidden = true
     
     }
     

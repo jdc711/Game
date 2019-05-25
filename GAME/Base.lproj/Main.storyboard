@@ -45,7 +45,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="soundPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="zQz-3R-YIe"/>
+                                    <action selector="Sound:" destination="BV1-FR-VrT" eventType="touchUpInside" id="bnR-Zd-7lz"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="G" translatesAutoresizingMaskIntoConstraints="NO" id="oFh-f1-Lxv">
@@ -76,15 +76,14 @@
                                 <rect key="frame" x="54" y="528" width="126" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EaF-jR-lBM" userLabel="sound">
-                                <rect key="frame" x="54" y="751" width="119" height="70"/>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ys-rK-FXs" userLabel="sound">
+                                <rect key="frame" x="38" y="641" width="92" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="\" image="soundOFF">
+                                <state key="normal" title="\" image="Mute">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="muteOFFPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="pOi-Er-E3B"/>
-                                    <action selector="soundPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="T7y-Xt-eZQ"/>
+                                    <action selector="Mute:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Zps-2W-2Ww"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,10 +91,17 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                     <connections>
+                        <outlet property="A" destination="dWy-KC-JKr" id="KaS-fn-21V"/>
+                        <outlet property="Ball" destination="goD-d7-JNJ" id="AZC-iX-wo3"/>
+                        <outlet property="G" destination="oFh-f1-Lxv" id="TbV-Pr-SQn"/>
+                        <outlet property="Goal" destination="Qez-Wy-E2k" id="Nxm-Hz-ir5"/>
+                        <outlet property="L" destination="atl-jD-jQH" id="Meq-iL-WxG"/>
+                        <outlet property="Mute" destination="8Ys-rK-FXs" id="A75-BT-U15"/>
+                        <outlet property="O" destination="dWy-KC-JKr" id="TuM-rj-J3Y"/>
+                        <outlet property="Sound" destination="e4c-GU-bDM" id="0bS-Y1-rnl"/>
+                        <outlet property="Z" destination="0fH-rm-c8n" id="z28-fb-OyV"/>
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
                         <outlet property="highScores" destination="dgJ-cl-oXc" id="AJT-ZR-L7I"/>
-                        <outlet property="mute" destination="e4c-GU-bDM" id="uCv-e6-0cE"/>
-                        <outlet property="muteOFF" destination="EaF-jR-lBM" id="jSc-jY-WDN"/>
                         <outlet property="playButton" destination="2Kr-9P-aMf" id="tM4-If-CET"/>
                     </connections>
                 </viewController>
@@ -109,6 +115,7 @@
         <image name="G" width="100" height="100"/>
         <image name="Goal" width="100" height="100"/>
         <image name="L" width="100" height="100"/>
+        <image name="Mute" width="100" height="100"/>
         <image name="O" width="100" height="100"/>
         <image name="Z-1" width="100" height="100"/>
         <image name="background-1" width="260" height="231"/>
@@ -116,6 +123,5 @@
         <image name="icons8-audio-100" width="100" height="100"/>
         <image name="icons8-next-filled-100" width="100" height="100"/>
         <image name="scoreboard" width="100" height="100"/>
-        <image name="soundOFF" width="50" height="50"/>
     </resources>
 </document>
