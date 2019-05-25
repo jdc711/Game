@@ -22,6 +22,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var mute: UIButton!
     
+    
+    
     var player: AVAudioPlayer!
 
     
@@ -38,7 +40,7 @@ class GameViewController: UIViewController {
         }
     
         
-        
+        player.play();
         
         
         
@@ -89,6 +91,9 @@ class GameViewController: UIViewController {
         
     }
     
+    @IBAction func soundPressed(_ sender: Any) {
+        player.stop()
+    }
     
     override var shouldAutorotate: Bool {
         return true
