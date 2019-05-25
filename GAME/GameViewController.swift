@@ -19,7 +19,20 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var highScores: UIButton!
     
+    @IBOutlet weak var G: UIImageView!
     
+    @IBOutlet weak var O: UIImageView!
+    
+    @IBOutlet weak var A: UIImageView!
+    
+    @IBOutlet weak var L: UIImageView!
+    
+    @IBOutlet weak var Z: UIImageView!
+    
+    @IBOutlet weak var Goal: UIImageView!
+    
+    @IBOutlet weak var Ball: UIImageView!
+
     @IBOutlet weak var mute: UIButton!
     
     
@@ -37,6 +50,10 @@ class GameViewController: UIViewController {
             player.prepareToPlay()
         }catch let error as NSError {
             print(error.description)
+        }
+        
+        UIView.animate(withDuration: 2.9, animations: { self.Ball.frame = CGRect(x:0,y:0,width: 126, height: 44)}) {(finished)in
+            self.Ball.isHidden = true
         }
     
         
@@ -76,12 +93,19 @@ class GameViewController: UIViewController {
     }
     @IBAction func playPressed(_ sender: Any) {
         background.isHidden = true
-         playButton.isHidden = true
-         highScores.isHidden = true
-         mute.isHidden = true
+        playButton.isHidden = true
+        highScores.isHidden = true
+        mute.isHidden = true
+        G.isHidden = true
+        O.isHidden = true
+        A.isHidden = true
+        L.isHidden = true
+        Z.isHidden = true
+        Goal.isHidden = true
+        Ball.isHidden = true
         
     }
-    
+   
 
     @IBAction func highScoresPressed(_ sender: Any) {
         
@@ -110,4 +134,7 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+
+    
 }

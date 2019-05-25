@@ -23,7 +23,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kr-9P-aMf">
-                                <rect key="frame" x="169" y="641" width="77" height="76"/>
+                                <rect key="frame" x="169" y="641" width="74" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="icons8-next-filled-100"/>
                                 <connections>
@@ -31,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgJ-cl-oXc" userLabel="leader boards">
-                                <rect key="frame" x="280" y="629" width="100" height="100"/>
+                                <rect key="frame" x="266" y="629" width="87" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="scoreboard"/>
                                 <connections>
@@ -39,7 +39,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4c-GU-bDM" userLabel="sound">
-                                <rect key="frame" x="44" y="641" width="92" height="76"/>
+                                <rect key="frame" x="44" y="641" width="91" height="72"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="\" image="icons8-audio-100">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -69,11 +69,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goal" translatesAutoresizingMaskIntoConstraints="NO" id="Qez-Wy-E2k">
-                                <rect key="frame" x="76" y="214" width="240" height="128"/>
+                                <rect key="frame" x="76" y="216" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball-1" translatesAutoresizingMaskIntoConstraints="NO" id="goD-d7-JNJ">
-                                <rect key="frame" x="54" y="528" width="126" height="44"/>
+                                <rect key="frame" x="133" y="501" width="126" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -81,6 +81,13 @@
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
                     </view>
                     <connections>
+                        <outlet property="A" destination="dWy-KC-JKr" id="Ert-dj-A9e"/>
+                        <outlet property="Ball" destination="goD-d7-JNJ" id="ib2-xS-TF3"/>
+                        <outlet property="G" destination="oFh-f1-Lxv" id="Dko-mG-0OT"/>
+                        <outlet property="Goal" destination="Qez-Wy-E2k" id="FD7-wc-hqa"/>
+                        <outlet property="L" destination="atl-jD-jQH" id="zwW-oo-qhq"/>
+                        <outlet property="O" destination="hU4-Kf-40f" id="sQ8-Aa-lu4"/>
+                        <outlet property="Z" destination="0fH-rm-c8n" id="ung-nw-zsw"/>
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
                         <outlet property="highScores" destination="dgJ-cl-oXc" id="AJT-ZR-L7I"/>
                         <outlet property="mute" destination="e4c-GU-bDM" id="uCv-e6-0cE"/>
