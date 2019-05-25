@@ -86,28 +86,28 @@
                                 <rect key="frame" x="133" y="526" width="126" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gray" translatesAutoresizingMaskIntoConstraints="NO" id="1id-Z3-JqG">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Gray" translatesAutoresizingMaskIntoConstraints="NO" id="1id-Z3-JqG">
                                 <rect key="frame" x="-2" y="44" width="416" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-de-xWO">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-de-xWO">
                                 <rect key="frame" x="375" y="44" width="39" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Exit"/>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goal" translatesAutoresizingMaskIntoConstraints="NO" id="EpE-50-Npc">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goal" translatesAutoresizingMaskIntoConstraints="NO" id="EpE-50-Npc">
                                 <rect key="frame" x="86" y="20" width="240" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball-1" translatesAutoresizingMaskIntoConstraints="NO" id="rta-4o-9zX">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ball-1" translatesAutoresizingMaskIntoConstraints="NO" id="rta-4o-9zX">
                                 <rect key="frame" x="126" y="682" width="160" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="Vxf-hs-zcm">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Line" translatesAutoresizingMaskIntoConstraints="NO" id="Vxf-hs-zcm">
                                 <rect key="frame" x="-51" y="311" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-lG-LoI">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-lG-LoI">
                                 <rect key="frame" x="328" y="44" width="39" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Pause"/>
@@ -125,6 +125,7 @@
                         <outlet property="G" destination="oFh-f1-Lxv" id="TbV-Pr-SQn"/>
                         <outlet property="Goal" destination="Qez-Wy-E2k" id="Nxm-Hz-ir5"/>
                         <outlet property="L" destination="atl-jD-jQH" id="Meq-iL-WxG"/>
+                        <outlet property="Line" destination="Vxf-hs-zcm" id="vFj-Ul-7oe"/>
                         <outlet property="Mute" destination="8Ys-rK-FXs" id="A75-BT-U15"/>
                         <outlet property="O" destination="dWy-KC-JKr" id="TuM-rj-J3Y"/>
                         <outlet property="Sound" destination="e4c-GU-bDM" id="0bS-Y1-rnl"/>
