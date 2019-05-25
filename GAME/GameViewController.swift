@@ -37,6 +37,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Mute: UIButton!
     
+    
     @IBOutlet weak var pause: UIButton!
     
     
