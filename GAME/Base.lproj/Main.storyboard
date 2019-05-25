@@ -83,6 +83,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="muteOFFPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="pOi-Er-E3B"/>
                                     <action selector="soundPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="T7y-Xt-eZQ"/>
                                 </connections>
                             </button>
@@ -94,6 +95,7 @@
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
                         <outlet property="highScores" destination="dgJ-cl-oXc" id="AJT-ZR-L7I"/>
                         <outlet property="mute" destination="e4c-GU-bDM" id="uCv-e6-0cE"/>
+                        <outlet property="muteOFF" destination="EaF-jR-lBM" id="jSc-jY-WDN"/>
                         <outlet property="playButton" destination="2Kr-9P-aMf" id="tM4-If-CET"/>
                     </connections>
                 </viewController>

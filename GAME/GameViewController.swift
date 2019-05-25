@@ -23,6 +23,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var mute: UIButton!
     
     
+    @IBOutlet weak var muteOFF: UIButton!
     
     var player: AVAudioPlayer!
    
@@ -91,13 +92,15 @@ class GameViewController: UIViewController {
     @IBAction func soundPressed(_ sender: Any) {
         
              player.stop()
-            MUTED.isHidden = false
+            muteOFF.isHidden = false
             mute.isHidden = true
         }
     
+    @IBAction func muteOFFPressed(_ sender: Any) {
+    
     
             player.play()
-            MUTED.isHidden = true
+            muteOFF.isHidden = true
             mute.isHidden = false
     
     }
