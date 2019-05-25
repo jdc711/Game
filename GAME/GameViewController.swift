@@ -37,6 +37,9 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Mute: UIButton!
     
+    @IBOutlet weak var pause: UIButton!
+    
+    
     var player: AVAudioPlayer!
    
     
@@ -99,8 +102,10 @@ class GameViewController: UIViewController {
         A.isHidden = true
         L.isHidden = true
         Z.isHidden = true
-        Goal.isHidden = true
-        Ball.isHidden = true
+       
+        
+        // Goal.isHidden = true
+       // Ball.isHidden = true
         
         
     }
@@ -127,6 +132,11 @@ class GameViewController: UIViewController {
             Sound.isHidden = true
     
     }
+    
+    @IBAction func pausePressed(_ sender: Any) {
+        
+    }
+    
     
     override var shouldAutorotate: Bool {
         return true
