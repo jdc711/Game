@@ -37,9 +37,13 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Mute: UIButton!
     
+
     
     @IBOutlet weak var pause: UIButton!
     
+
+    @IBOutlet weak var Line: UIImageView!
+
     
     var player: AVAudioPlayer!
    
@@ -103,10 +107,30 @@ class GameViewController: UIViewController {
         A.isHidden = true
         L.isHidden = true
         Z.isHidden = true
+
        
         
         // Goal.isHidden = true
        // Ball.isHidden = true
+
+        Goal.isHidden = true
+        Ball.isHidden = true
+        Mute.isHidden = true
+        Sound.isHidden = true
+        
+    
+        UIView.animate(withDuration: 1.7, animations: { self.Ball.frame = CGRect(x:133,y:100,width: 126, height: 44)}) {(finished)in
+            self.Ball.isHidden = true
+        }
+        
+      
+        UIView.animate(withDuration: 2.0, animations: { self.Line.frame = CGRect(x:200,y:311,width: 240, height: 128)}) {(finished)in
+        }
+        
+        UIView.animate(withDuration: 2.0, animations: { self.Line.frame = CGRect(x:-51,y:311,width: 240, height: 128)}) {(finished)in
+        }
+        
+
         
         
     }
