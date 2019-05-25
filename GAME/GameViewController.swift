@@ -9,7 +9,7 @@
 import UIKit
 import SpriteKit
 import GameplayKit
-
+import AVFoundation
 class GameViewController: UIViewController {
 
    
@@ -22,12 +22,27 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var mute: UIButton!
     
-   
+    var player: AVAudioPlayer!
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Load 'GameScene.sks' as a GKScene. This provides gameplay related content
+        let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
+        let url = URL(fileURLWithPath: path)
+        do{
+            player = try AVAudioPlayer(contentsOf: url)
+            player.prepareToPlay()
+        }catch let error as NSError {
+            print(error.description)
+        }
+    
+        
+        
+        
+        
+        
+        /*// Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "GameScene") {
             
@@ -54,7 +69,9 @@ class GameViewController: UIViewController {
         }
     }
     
-    
+         */
+        
+    }
     @IBAction func playPressed(_ sender: Any) {
         background.isHidden = true
          playButton.isHidden = true
