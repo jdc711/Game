@@ -41,10 +41,8 @@ class GameViewController: UIViewController {
         }
     
         
-        player.play();
-        
-        
-        
+        player.play()
+    }
         /*// Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "GameScene") {
@@ -71,10 +69,8 @@ class GameViewController: UIViewController {
             }
         }
     }
+    */
     
-         */
-        
-    }
     @IBAction func playPressed(_ sender: Any) {
         background.isHidden = true
          playButton.isHidden = true
@@ -93,12 +89,17 @@ class GameViewController: UIViewController {
     }
     
     @IBAction func soundPressed(_ sender: Any) {
-        if (player.isPlaying){
+        
              player.stop()
+            MUTED.isHidden = false
+            mute.isHidden = true
         }
-        else{
+    
+    
             player.play()
-        }
+            MUTED.isHidden = true
+            mute.isHidden = false
+    
     }
     
     override var shouldAutorotate: Bool {
