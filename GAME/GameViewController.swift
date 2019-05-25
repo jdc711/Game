@@ -12,6 +12,18 @@ import GameplayKit
 
 class GameViewController: UIViewController {
 
+   
+    @IBOutlet weak var background: UIImageView!
+    
+    @IBOutlet weak var playButton: UIButton!
+    
+    @IBOutlet weak var highScores: UIButton!
+    
+    
+    @IBOutlet weak var mute: UIButton!
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,7 +53,26 @@ class GameViewController: UIViewController {
             }
         }
     }
+    
+    
+    @IBAction func playPressed(_ sender: Any) {
+        background.isHidden = true
+         playButton.isHidden = true
+         highScores.isHidden = true
+         mute.isHidden = true
+        
+    }
+    
 
+    @IBAction func highScoresPressed(_ sender: Any) {
+        
+        playButton.isHidden = true
+        highScores.isHidden = true
+        mute.isHidden = true
+        
+    }
+    
+    
     override var shouldAutorotate: Bool {
         return true
     }
