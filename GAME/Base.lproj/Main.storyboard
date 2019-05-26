@@ -90,11 +90,6 @@
                                 <rect key="frame" x="-2" y="44" width="416" height="852"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-de-xWO">
-                                <rect key="frame" x="375" y="44" width="39" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Exit"/>
-                            </button>
                             <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Goal" translatesAutoresizingMaskIntoConstraints="NO" id="EpE-50-Npc">
                                 <rect key="frame" x="86" y="20" width="240" height="117"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -107,14 +102,17 @@
                                 <rect key="frame" x="-51" y="311" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TJC-lG-LoI">
-                                <rect key="frame" x="328" y="44" width="39" height="36"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LEVEL 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZS-VD-VYJ">
+                                <rect key="frame" x="20" y="59" width="111" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="Pause"/>
-                                <connections>
-                                    <action selector="pausePressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="EKN-aP-hBa"/>
-                                </connections>
-                            </button>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Scored" translatesAutoresizingMaskIntoConstraints="NO" id="TOW-rD-aPx">
+                                <rect key="frame" x="86" y="19" width="240" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="4qk-I5-YsI"/>
@@ -122,9 +120,14 @@
                     <connections>
                         <outlet property="A" destination="dWy-KC-JKr" id="KaS-fn-21V"/>
                         <outlet property="Ball" destination="goD-d7-JNJ" id="AZC-iX-wo3"/>
+                        <outlet property="Ball2" destination="rta-4o-9zX" id="4Bn-MT-OgK"/>
                         <outlet property="G" destination="oFh-f1-Lxv" id="TbV-Pr-SQn"/>
                         <outlet property="Goal" destination="Qez-Wy-E2k" id="Nxm-Hz-ir5"/>
+                        <outlet property="Goal2" destination="EpE-50-Npc" id="Tw5-2C-3fZ"/>
+                        <outlet property="Gray" destination="1id-Z3-JqG" id="TwF-no-VzW"/>
+                        <outlet property="GreenGoal" destination="TOW-rD-aPx" id="b8v-6U-FAH"/>
                         <outlet property="L" destination="atl-jD-jQH" id="Meq-iL-WxG"/>
+                        <outlet property="Level1" destination="FZS-VD-VYJ" id="vbI-rc-Th0"/>
                         <outlet property="Line" destination="Vxf-hs-zcm" id="vFj-Ul-7oe"/>
                         <outlet property="Mute" destination="8Ys-rK-FXs" id="A75-BT-U15"/>
                         <outlet property="O" destination="dWy-KC-JKr" id="TuM-rj-J3Y"/>
@@ -132,7 +135,6 @@
                         <outlet property="Z" destination="0fH-rm-c8n" id="z28-fb-OyV"/>
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
                         <outlet property="highScores" destination="dgJ-cl-oXc" id="AJT-ZR-L7I"/>
-                        <outlet property="pause" destination="TJC-lG-LoI" id="f6o-am-G4t"/>
                         <outlet property="playButton" destination="2Kr-9P-aMf" id="tM4-If-CET"/>
                     </connections>
                 </viewController>
@@ -143,7 +145,6 @@
     </scenes>
     <resources>
         <image name="A" width="100" height="100"/>
-        <image name="Exit" width="100" height="100"/>
         <image name="G" width="100" height="100"/>
         <image name="Goal" width="100" height="100"/>
         <image name="Gray" width="284" height="177"/>
@@ -151,7 +152,7 @@
         <image name="Line" width="100" height="100"/>
         <image name="Mute" width="100" height="100"/>
         <image name="O" width="100" height="100"/>
-        <image name="Pause" width="100" height="100"/>
+        <image name="Scored" width="100" height="100"/>
         <image name="Z-1" width="100" height="100"/>
         <image name="background-1" width="260" height="231"/>
         <image name="ball-1" width="100" height="100"/>

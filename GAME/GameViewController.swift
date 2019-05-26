@@ -37,13 +37,17 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Mute: UIButton!
     
-
+    @IBOutlet weak var Gray: UIImageView!
     
-    @IBOutlet weak var pause: UIButton!
+    @IBOutlet weak var Goal2: UIImageView!
     
-
+    @IBOutlet weak var Ball2: UIImageView!
+    
     @IBOutlet weak var Line: UIImageView!
-
+    
+    @IBOutlet weak var GreenGoal: UIImageView!
+    
+    @IBOutlet weak var Level1: UILabel!
     
     var player: AVAudioPlayer!
    
@@ -107,31 +111,34 @@ class GameViewController: UIViewController {
         A.isHidden = true
         L.isHidden = true
         Z.isHidden = true
-
-       
-        
-        // Goal.isHidden = true
-       // Ball.isHidden = true
-
         Goal.isHidden = true
         Ball.isHidden = true
         Mute.isHidden = true
         Sound.isHidden = true
+        //what will be shown when play button is pressed
+        
+        Goal2.isHidden = false
+        Ball2.isHidden = false
+        Line.isHidden = false
+        Gray.isHidden = false
+        Level1.isHidden = false
+        GreenGoal.isHidden = true
+    
+        
+       
+
+
+        // motion of ball into goal
+        UIView.animate(withDuration: 1.7, animations: { self.Ball2.frame = CGRect(x:133,y:80,width: 126, height: 44)}) {(finished)in
+            self.Ball2.isHidden = true  //ball hides when hits goal
+            self.GreenGoal.isHidden = false
+        }
+
+       // line moves left to block shot
+        UIView.animate(withDuration: 4.0, animations: { self.Line.frame = CGRect(x:400,y:311,width: 240, height: 128)}) {(finished)in
+        }
         
     
-        UIView.animate(withDuration: 1.7, animations: { self.Ball.frame = CGRect(x:133,y:100,width: 126, height: 44)}) {(finished)in
-            self.Ball.isHidden = true
-        }
-        
-      
-        UIView.animate(withDuration: 2.0, animations: { self.Line.frame = CGRect(x:200,y:311,width: 240, height: 128)}) {(finished)in
-        }
-        
-        UIView.animate(withDuration: 2.0, animations: { self.Line.frame = CGRect(x:-51,y:311,width: 240, height: 128)}) {(finished)in
-        }
-        
-
-        
         
     }
    
@@ -157,11 +164,6 @@ class GameViewController: UIViewController {
             Sound.isHidden = true
     
     }
-    
-    @IBAction func pausePressed(_ sender: Any) {
-        
-    }
-    
     
     override var shouldAutorotate: Bool {
         return true
