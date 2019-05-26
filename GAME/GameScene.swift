@@ -10,7 +10,14 @@ import SpriteKit
 import GameplayKit
 
 
-class GameScene: SKScene {
+class GameScene: SKScene, SKPhysicsContactDelegate {
+    
+    var player:SKSpriteNode!
+    
+    var initialPlayerPosition:CGPoint!
+    
+    
+    
     
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
@@ -18,6 +25,7 @@ class GameScene: SKScene {
     private var lastUpdateTime : TimeInterval = 0
     private var label : SKLabelNode?
     private var spinnyNode : SKShapeNode?
+    
     
     override func sceneDidLoad() {
 
