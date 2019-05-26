@@ -59,10 +59,9 @@ class GameViewController: UIViewController {
     
     var player: AVAudioPlayer!
    
-    
+    //this code is for the loading sound and animation
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let path = Bundle.main.path(forResource: "hustle-on", ofType: "wav")!
         let url = URL(fileURLWithPath: path)
         do{
@@ -75,11 +74,8 @@ class GameViewController: UIViewController {
         
         UIView.animate(withDuration: 1.7, animations: { self.Ball.frame = CGRect(x:133,y:275,width: 126, height: 44)}) {(finished)in
             self.Ball.isHidden = true
-            //self.Goal.isHidden = true
         }
-    
-        
-        player.play()
+        player.play() //by default the sound plays until mute button is pressed at main menu
     }
     
     
@@ -130,7 +126,7 @@ class GameViewController: UIViewController {
     }
    
 
-   
+   //home button to go back to main menu
     @IBAction func homeButtonPressed(_ sender: UIButton) {
     
     background.isHidden = false;
@@ -155,7 +151,7 @@ class GameViewController: UIViewController {
     
     
     
-    
+    //shows leaderboards
     @IBAction func highScoresPressed(_ sender: Any) {
         playButton.isHidden = true
         highScores.isHidden = true
