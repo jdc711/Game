@@ -166,7 +166,8 @@ class GameViewController: UIViewController {
         L.isHidden = true;
         Z.isHidden = true;
         Goal.isHidden = true;
-        
+        Ball.isHidden = true;
+        homeButton.isHidden = false;
     }
     
 
