@@ -21,6 +21,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var G: UIImageView!
     
+   
     @IBOutlet weak var O: UIImageView!
     
     @IBOutlet weak var A: UIImageView!
@@ -49,6 +50,13 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Level1: UILabel!
     
+    @IBOutlet weak var trophy: UIImageView!
+    
+    
+    @IBOutlet weak var homeButton: UIButton!
+    
+   
+    
     var player: AVAudioPlayer!
    
     
@@ -73,33 +81,11 @@ class GameViewController: UIViewController {
         
         player.play()
     }
-        /*// Load 'GameScene.sks' as a GKScene. This provides gameplay related content
-        // including entities and graphs.
-        if let scene = GKScene(fileNamed: "GameScene") {
-            
-            // Get the SKScene from the loaded GKScene
-            if let sceneNode = scene.rootNode as! GameScene? {
-                
-                // Copy gameplay related content over to the scene
-                sceneNode.entities = scene.entities
-                sceneNode.graphs = scene.graphs
-                
-                // Set the scale mode to scale to fit the window
-                sceneNode.scaleMode = .aspectFill
-                
-                // Present the scene
-                if let view = self.view as! SKView? {
-                    view.presentScene(sceneNode)
-                    
-                    view.ignoresSiblingOrder = true
-                    
-                    view.showsFPS = true
-                    view.showsNodeCount = true
-                }
-            }
-        }
-    }
-    */
+    
+    
+    
+    
+    
     
     @IBAction func playPressed(_ sender: Any) {
         background.isHidden = true
@@ -123,6 +109,7 @@ class GameViewController: UIViewController {
         Gray.isHidden = false
         Level1.isHidden = false
         GreenGoal.isHidden = true
+        
     
         
        
@@ -143,10 +130,43 @@ class GameViewController: UIViewController {
     }
    
 
+    @IBAction func homeButtonPressed(_ sender: Any) {
+        background.isHidden = false;
+        playButton.isHidden = false;
+        highScores.isHidden = false;
+        Sound.isHidden = false;
+        G.isHidden = false;
+        O.isHidden = false;
+        A.isHidden = false;
+        L.isHidden = false;
+        Z.isHidden = false;
+        Goal.isHidden = false;
+        Ball.isHidden = false;
+        Gray.isHidden = true;
+        Line.isHidden = true;
+        Level1.isHidden = true;
+        GreenGoal.isHidden = true;
+        trophy.isHidden = true;
+        homeButton.isHidden = true;
+    }
+   
+    
+    
+    
+    
     @IBAction func highScoresPressed(_ sender: Any) {
         playButton.isHidden = true
         highScores.isHidden = true
         Sound.isHidden = true
+        Mute.isHidden = true
+        trophy.isHidden = false
+        G.isHidden = true;
+        O.isHidden = true;
+        A.isHidden = true;
+        L.isHidden = true;
+        Z.isHidden = true;
+        Goal.isHidden = true;
+        
     }
     
 
