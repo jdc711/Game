@@ -49,6 +49,10 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Level1: UILabel!
     
+    @IBOutlet weak var trophy: UIImageView!
+    
+    
+    
     var player: AVAudioPlayer!
    
     
@@ -73,7 +77,14 @@ class GameViewController: UIViewController {
         
         player.play()
     }
-        /*// Load 'GameScene.sks' as a GKScene. This provides gameplay related content
+    
+    
+    
+    
+    
+    
+    
+    /*// Load 'GameScene.sks' as a GKScene. This provides gameplay related content
         // including entities and graphs.
         if let scene = GKScene(fileNamed: "GameScene") {
             
@@ -123,6 +134,7 @@ class GameViewController: UIViewController {
         Gray.isHidden = false
         Level1.isHidden = false
         GreenGoal.isHidden = true
+        
     
         
        
@@ -147,6 +159,7 @@ class GameViewController: UIViewController {
         playButton.isHidden = true
         highScores.isHidden = true
         Sound.isHidden = true
+        trophy.isHidden = false
     }
     
 
