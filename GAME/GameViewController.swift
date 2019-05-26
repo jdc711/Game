@@ -37,10 +37,6 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var Mute: UIButton!
     
-    @IBOutlet weak var pause: UIButton!
-    
-    @IBOutlet weak var Resume: UIButton!
-  
     @IBOutlet weak var Gray: UIImageView!
     
     @IBOutlet weak var Goal2: UIImageView!
@@ -52,11 +48,6 @@ class GameViewController: UIViewController {
     @IBOutlet weak var GreenGoal: UIImageView!
     
     @IBOutlet weak var Level1: UILabel!
-    
-    @IBOutlet weak var PausedBackground: UIImageView!
-    
-    @IBOutlet weak var Resume_in_game: UIImageView!
-    
     
     var player: AVAudioPlayer!
    
@@ -124,10 +115,6 @@ class GameViewController: UIViewController {
         Ball.isHidden = true
         Mute.isHidden = true
         Sound.isHidden = true
-        Resume_in_game.isHidden = true
-        PausedBackground.isHidden = true
-        
-        
         //what will be shown when play button is pressed
         
         Goal2.isHidden = false
@@ -135,9 +122,7 @@ class GameViewController: UIViewController {
         Line.isHidden = false
         Gray.isHidden = false
         Level1.isHidden = false
-        pause.isHidden = false
-        Resume.isHidden = false
-        GreenGoal.isHidden = false
+        GreenGoal.isHidden = true
     
         
        
@@ -179,79 +164,6 @@ class GameViewController: UIViewController {
             Sound.isHidden = true
     
     }
-    
-    @IBAction func pausePressed(_ sender: Any) {
-        
-        background.isHidden = true
-        playButton.isHidden = true
-        highScores.isHidden = true
-        Mute.isHidden = true
-        G.isHidden = true
-        O.isHidden = true
-        A.isHidden = true
-        L.isHidden = true
-        Z.isHidden = true
-        Goal.isHidden = true
-        Ball.isHidden = true
-        Mute.isHidden = true
-        Sound.isHidden = true
-        Goal2.isHidden = true
-        Ball2.isHidden = true
-        Line.isHidden = true
-        Gray.isHidden = true
-        Level1.isHidden = true
-        pause.isHidden = true
-        Resume.isHidden = true
-        GreenGoal.isHidden = true
-        Gray.isHidden = true
-       
-        PausedBackground.isHidden = false
-        Resume_in_game.isHidden = false
-        //Sound.isHidden = true
-       // soundOFF.isHidden = true
-
-    }
-    
-    
-    @IBAction func Resume(_ sender: Any) {
-        
-        background.isHidden = false
-        playButton.isHidden = false
-        highScores.isHidden = false
-        Mute.isHidden = false
-        G.isHidden = false
-        O.isHidden = false
-        A.isHidden = false
-        L.isHidden = false
-        Z.isHidden = false
-        Goal.isHidden = false
-        Ball.isHidden = false
-        Mute.isHidden = false
-        Sound.isHidden = false
- 
-        
-        
-        //what will be shown when play button is pressed
-        
-        Goal2.isHidden = true
-        Ball2.isHidden = true
-        Line.isHidden = true
-        Gray.isHidden = true
-        Level1.isHidden = true
-        pause.isHidden = true
-        Resume.isHidden = true
-        GreenGoal.isHidden = true 
-        
-        
-        UIView.animate(withDuration: 1.7, animations: { self.Ball.frame = CGRect(x:133,y:275,width: 126, height: 44)}) {(finished)in
-            self.Ball.isHidden = true
-            //self.Goal.isHidden = true
-        }
-        
-        
-    
-    }
-    
     
     override var shouldAutorotate: Bool {
         return true
