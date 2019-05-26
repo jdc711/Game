@@ -21,6 +21,7 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var G: UIImageView!
     
+   
     @IBOutlet weak var O: UIImageView!
     
     @IBOutlet weak var A: UIImageView!
@@ -157,7 +158,15 @@ class GameViewController: UIViewController {
         playButton.isHidden = true
         highScores.isHidden = true
         Sound.isHidden = true
+        Mute.isHidden = true
         trophy.isHidden = false
+        G.isHidden = true;
+        O.isHidden = true;
+        A.isHidden = true;
+        L.isHidden = true;
+        Z.isHidden = true;
+        Goal.isHidden = true;
+        
     }
     
 

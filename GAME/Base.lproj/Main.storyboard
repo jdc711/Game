@@ -117,7 +117,7 @@
                                 <rect key="frame" x="83" y="201" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogk-dO-Q2S">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ogk-dO-Q2S" userLabel="home">
                                 <rect key="frame" x="27" y="725" width="96" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icons8-home-page-100"/>
@@ -139,7 +139,7 @@
                         <outlet property="Level1" destination="FZS-VD-VYJ" id="vbI-rc-Th0"/>
                         <outlet property="Line" destination="Vxf-hs-zcm" id="vFj-Ul-7oe"/>
                         <outlet property="Mute" destination="8Ys-rK-FXs" id="A75-BT-U15"/>
-                        <outlet property="O" destination="dWy-KC-JKr" id="TuM-rj-J3Y"/>
+                        <outlet property="O" destination="hU4-Kf-40f" id="bOp-RU-uXp"/>
                         <outlet property="Sound" destination="e4c-GU-bDM" id="0bS-Y1-rnl"/>
                         <outlet property="Z" destination="0fH-rm-c8n" id="z28-fb-OyV"/>
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
