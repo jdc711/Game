@@ -121,6 +121,9 @@
                                 <rect key="frame" x="27" y="725" width="96" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="icons8-home-page-100"/>
+                                <connections>
+                                    <action selector="homeButtonPressed:" destination="BV1-FR-VrT" eventType="touchUpInside" id="VqA-mZ-KbB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -144,6 +147,7 @@
                         <outlet property="Z" destination="0fH-rm-c8n" id="z28-fb-OyV"/>
                         <outlet property="background" destination="CbC-Lj-DtK" id="dak-MT-mG9"/>
                         <outlet property="highScores" destination="dgJ-cl-oXc" id="AJT-ZR-L7I"/>
+                        <outlet property="homeButton" destination="ogk-dO-Q2S" id="z8P-rC-wpe"/>
                         <outlet property="playButton" destination="2Kr-9P-aMf" id="tM4-If-CET"/>
                         <outlet property="trophy" destination="bhw-7r-NcE" id="ku6-mU-GxK"/>
                     </connections>

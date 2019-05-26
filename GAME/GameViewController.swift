@@ -52,8 +52,8 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var trophy: UIImageView!
     
-    
     @IBOutlet weak var homeButton: UIButton!
+    
     
    
     
@@ -130,8 +130,10 @@ class GameViewController: UIViewController {
     }
    
 
-    @IBAction func homeButtonPressed(_ sender: Any) {
-        background.isHidden = false;
+   
+    @IBAction func homeButtonPressed(_ sender: UIButton) {
+    
+    background.isHidden = false;
         playButton.isHidden = false;
         highScores.isHidden = false;
         Sound.isHidden = false;
