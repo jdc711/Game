@@ -88,7 +88,7 @@ class GameScene: SKScene {
         for t in touches { self.touchUp(atPoint: t.location(in: self)) }
     }
     
-    
+
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
         
