@@ -13,10 +13,10 @@
 		B897300622995F0E00CE6BCA /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897300522995F0E00CE6BCA /* GameScene.swift */; };
 		B897300822995F0E00CE6BCA /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897300722995F0E00CE6BCA /* GameViewController.swift */; };
 		B897300B22995F0E00CE6BCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B897300922995F0E00CE6BCA /* Main.storyboard */; };
-		B897300D22995F0F00CE6BCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B897300C22995F0F00CE6BCA /* Assets.xcassets */; };
 		B897301022995F0F00CE6BCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B897300E22995F0F00CE6BCA /* LaunchScreen.storyboard */; };
 		B897301B22995F0F00CE6BCA /* GAMETests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897301A22995F0F00CE6BCA /* GAMETests.swift */; };
 		B897302622995F0F00CE6BCA /* GAMEUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B897302522995F0F00CE6BCA /* GAMEUITests.swift */; };
+		B8AABCDA229B1D4900AD8EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8AABCD8229B1D4900AD8EEF /* Assets.xcassets */; };
 		B8ADDF0C229981A000C64EC9 /* hustle-on.wav in Resources */ = {isa = PBXBuildFile; fileRef = B8ADDF0B2299819F00C64EC9 /* hustle-on.wav */; };
 /* End PBXBuildFile section */
 
@@ -45,7 +45,6 @@
 		B897300522995F0E00CE6BCA /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		B897300722995F0E00CE6BCA /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B897300A22995F0E00CE6BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B897300C22995F0F00CE6BCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B897300F22995F0F00CE6BCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B897301122995F0F00CE6BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B897301622995F0F00CE6BCA /* GAMETests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAMETests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +53,7 @@
 		B897302122995F0F00CE6BCA /* GAMEUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GAMEUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B897302522995F0F00CE6BCA /* GAMEUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GAMEUITests.swift; sourceTree = "<group>"; };
 		B897302722995F0F00CE6BCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8AABCD8229B1D4900AD8EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8ADDF0B2299819F00C64EC9 /* hustle-on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "hustle-on.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,7 +112,7 @@
 				B897300522995F0E00CE6BCA /* GameScene.swift */,
 				B897300722995F0E00CE6BCA /* GameViewController.swift */,
 				B897300922995F0E00CE6BCA /* Main.storyboard */,
-				B897300C22995F0F00CE6BCA /* Assets.xcassets */,
+				B8AABCD8229B1D4900AD8EEF /* Assets.xcassets */,
 				B897300E22995F0F00CE6BCA /* LaunchScreen.storyboard */,
 				B897301122995F0F00CE6BCA /* Info.plist */,
 			);
@@ -244,7 +244,7 @@
 				B897300B22995F0E00CE6BCA /* Main.storyboard in Resources */,
 				B897300222995F0E00CE6BCA /* GameScene.sks in Resources */,
 				B8ADDF0C229981A000C64EC9 /* hustle-on.wav in Resources */,
-				B897300D22995F0F00CE6BCA /* Assets.xcassets in Resources */,
+				B8AABCDA229B1D4900AD8EEF /* Assets.xcassets in Resources */,
 				B897301022995F0F00CE6BCA /* LaunchScreen.storyboard in Resources */,
 				B897300422995F0E00CE6BCA /* Actions.sks in Resources */,
 			);

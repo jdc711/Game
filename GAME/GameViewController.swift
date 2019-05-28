@@ -12,7 +12,8 @@ import GameplayKit
 import AVFoundation
 class GameViewController: UIViewController {
 
-   
+
+    
     @IBOutlet weak var background: UIImageView!
     
     @IBOutlet weak var playButton: UIButton!
@@ -72,7 +73,7 @@ class GameViewController: UIViewController {
             print(error.description)
         }
         
-        UIView.animate(withDuration: 1.7, animations: { self.Ball.frame = CGRect(x:133,y:275,width: 126, height: 44)}) {(finished)in
+        UIView.animate(withDuration: 1.5, animations: { self.Ball.frame = CGRect(x:133,y:275,width: 126, height: 44)}) {(finished)in
             self.Ball.isHidden = true
         }
         player.play() //by default the sound plays until mute button is pressed at main menu
@@ -139,7 +140,7 @@ class GameViewController: UIViewController {
         L.isHidden = false;
         Z.isHidden = false;
         Goal.isHidden = false;
-        Ball.isHidden = false;
+        Ball.isHidden = true;
         Gray.isHidden = true;
         Line.isHidden = true;
         Level1.isHidden = true;
@@ -158,7 +159,7 @@ class GameViewController: UIViewController {
         Sound.isHidden = true
         Mute.isHidden = true
         trophy.isHidden = false
-        G.isHidden = true;
+        G.isHidden = true;    //why is there ";?"
         O.isHidden = true;
         A.isHidden = true;
         L.isHidden = true;
@@ -199,6 +200,11 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+    
+
+
+
+    
     
 
 }
