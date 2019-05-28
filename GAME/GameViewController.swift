@@ -55,9 +55,6 @@ class GameViewController: UIViewController {
     
     @IBOutlet weak var homeButton: UIButton!
     
-    
-   
-    
     var player: AVAudioPlayer!
    
     //this code is for the loading sound and animation
@@ -80,9 +77,7 @@ class GameViewController: UIViewController {
     }
     
     
-    
-    
-    
+   
     
     @IBAction func playPressed(_ sender: Any) {
         background.isHidden = true
@@ -201,11 +196,23 @@ class GameViewController: UIViewController {
         return true
     }
     
-
-
-
     
+    @IBOutlet weak var activity: UIActivityIndicatorView!
     
+    @IBAction func loading(_ sender: Any) {
+        if activity.isAnimating == true
+        {
+            activity.isHidden = true
+            activity.stopAnimating()
+        }
+        else
+        {
+            activity.isHidden = false
+            activity.startAnimating()
+        }
+        
+        
+    }
 
 }
 
