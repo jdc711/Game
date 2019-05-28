@@ -10,15 +10,43 @@ import SpriteKit
 import GameplayKit
 
 
-class GameScene: SKScene, SKPhysicsContactDelegate {
-    
-    var player:SKSpriteNode!
-    
-    var initialPlayerPosition:CGPoint!
+class GameScene: SKScene {
     
     
     
+    var Ball = SKSpriteNode()
     
+    override func didMove(to view: SKView) {
+        Ball = SKSpriteNode(imageNamed: "ball-1")
+        Ball.size = CGSize (width: 60, height: 70)
+        Ball.position = CGPoint(x: self.frame.width * 0.5, y: self.frame.height * 0.5)
+       
+        self.addChild(Ball)
+    }
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+//this was all default code, we could uncomment this stuff if we want to use them later
+/*
     var entities = [GKEntity]()
     var graphs = [String : GKGraph]()
     
@@ -115,5 +143,5 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
         self.lastUpdateTime = currentTime
-    }
-}
+    }*/
+
