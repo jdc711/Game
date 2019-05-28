@@ -12,8 +12,7 @@ import GameplayKit
 
 class GameScene: SKScene {
     
-    
-    
+
     var Ball = SKSpriteNode()
     
     override func didMove(to view: SKView) {
